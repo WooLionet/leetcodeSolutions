@@ -1,0 +1,43 @@
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - private_outlet
+line_length:
+  warning: 150
+  error: 150
+type_body_length:
+  warning: 600
+  error: 600
+function_body_length:
+  warning: 80
+  error: 80
+cyclomatic_complexity:
+  warning: 25
+  error: 25
+file_length:
+  warning: 1000
+  error: 1000
+function_parameter_count:
+  warning: 10
+  error: 10
+type_name:
+  max_length:
+    warning: 50
+    error: 50
+identifier_name:
+  min_length: # only min_length
+    error: 2 # only error
+  excluded: # excluded via string array
+    - id
+    - x
+    - y
+    - on
+    - ok
+nesting:
+  type_level:
+    warning: 2
+    error: 2
+excluded:
+  leetcodeSolutions/main.swift
+
+reporter: "xcode"
