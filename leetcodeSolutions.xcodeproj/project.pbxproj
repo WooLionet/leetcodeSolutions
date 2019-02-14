@@ -12,10 +12,15 @@
 		3AAD2344220447E3008D12BC /* Solution212TestDataUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD2343220447E3008D12BC /* Solution212TestDataUnit.swift */; };
 		3AAD234622044827008D12BC /* Solution212TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AAD234522044827008D12BC /* Solution212TestData.json */; };
 		3AAD234822044FDF008D12BC /* XCTest+Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD234722044FDF008D12BC /* XCTest+Exstension.swift */; };
+		3AF5A56822159982001BE6F8 /* Solution126TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AF5A56522159982001BE6F8 /* Solution126TestData.json */; };
+		3AF5A56922159982001BE6F8 /* Solution126Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5A56622159982001BE6F8 /* Solution126Test.swift */; };
+		3AF5A56A22159982001BE6F8 /* Solution126TestDataUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5A56722159982001BE6F8 /* Solution126TestDataUnit.swift */; };
+		3AF5A56B22159C82001BE6F8 /* Solution126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A142213065100CAFAEC /* Solution126.swift */; };
 		3AFD1A0C2212C29200CAFAEC /* Solution212.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A0B2212C29200CAFAEC /* Solution212.swift */; };
 		3AFD1A0E2212C2A700CAFAEC /* Solution212.Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A0D2212C2A700CAFAEC /* Solution212.Structs.swift */; };
 		3AFD1A0F2212E9DE00CAFAEC /* Solution212.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A0B2212C29200CAFAEC /* Solution212.swift */; };
 		3AFD1A102212E9DE00CAFAEC /* Solution212.Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A0D2212C2A700CAFAEC /* Solution212.Structs.swift */; };
+		3AFD1A152213065100CAFAEC /* Solution126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD1A142213065100CAFAEC /* Solution126.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,8 +44,12 @@
 		3AAD2343220447E3008D12BC /* Solution212TestDataUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution212TestDataUnit.swift; sourceTree = "<group>"; };
 		3AAD234522044827008D12BC /* Solution212TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Solution212TestData.json; sourceTree = "<group>"; };
 		3AAD234722044FDF008D12BC /* XCTest+Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Exstension.swift"; sourceTree = "<group>"; };
+		3AF5A56522159982001BE6F8 /* Solution126TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Solution126TestData.json; sourceTree = "<group>"; };
+		3AF5A56622159982001BE6F8 /* Solution126Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution126Test.swift; sourceTree = "<group>"; };
+		3AF5A56722159982001BE6F8 /* Solution126TestDataUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution126TestDataUnit.swift; sourceTree = "<group>"; };
 		3AFD1A0B2212C29200CAFAEC /* Solution212.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution212.swift; sourceTree = "<group>"; };
 		3AFD1A0D2212C2A700CAFAEC /* Solution212.Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution212.Structs.swift; sourceTree = "<group>"; };
+		3AFD1A142213065100CAFAEC /* Solution126.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution126.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3AAD233B220442BC008D12BC /* Info.plist */,
+				3AF5A56422159982001BE6F8 /* Solution126 */,
 				3AAD233F2204442A008D12BC /* Solution212 */,
 				3AAD234722044FDF008D12BC /* XCTest+Exstension.swift */,
 			);
@@ -108,9 +118,20 @@
 			path = Solution212;
 			sourceTree = "<group>";
 		};
+		3AF5A56422159982001BE6F8 /* Solution126 */ = {
+			isa = PBXGroup;
+			children = (
+				3AF5A56622159982001BE6F8 /* Solution126Test.swift */,
+				3AF5A56722159982001BE6F8 /* Solution126TestDataUnit.swift */,
+				3AF5A56522159982001BE6F8 /* Solution126TestData.json */,
+			);
+			path = Solution126;
+			sourceTree = "<group>";
+		};
 		3AFD1A092212C29200CAFAEC /* problems */ = {
 			isa = PBXGroup;
 			children = (
+				3AFD1A132213065100CAFAEC /* Solution126 */,
 				3AFD1A0A2212C29200CAFAEC /* Solution212 */,
 			);
 			path = problems;
@@ -123,6 +144,14 @@
 				3AFD1A0D2212C2A700CAFAEC /* Solution212.Structs.swift */,
 			);
 			path = Solution212;
+			sourceTree = "<group>";
+		};
+		3AFD1A132213065100CAFAEC /* Solution126 */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD1A142213065100CAFAEC /* Solution126.swift */,
+			);
+			path = Solution126;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF5A56822159982001BE6F8 /* Solution126TestData.json in Resources */,
 				3AAD234622044827008D12BC /* Solution212TestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +268,7 @@
 			files = (
 				3AFD1A0C2212C29200CAFAEC /* Solution212.swift in Sources */,
 				3A9EDF5B22043FA200A8813A /* main.swift in Sources */,
+				3AFD1A152213065100CAFAEC /* Solution126.swift in Sources */,
 				3AFD1A0E2212C2A700CAFAEC /* Solution212.Structs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF5A56B22159C82001BE6F8 /* Solution126.swift in Sources */,
+				3AF5A56922159982001BE6F8 /* Solution126Test.swift in Sources */,
 				3AFD1A0F2212E9DE00CAFAEC /* Solution212.swift in Sources */,
+				3AF5A56A22159982001BE6F8 /* Solution126TestDataUnit.swift in Sources */,
 				3AFD1A102212E9DE00CAFAEC /* Solution212.Structs.swift in Sources */,
 				3AAD234822044FDF008D12BC /* XCTest+Exstension.swift in Sources */,
 				3AAD2344220447E3008D12BC /* Solution212TestDataUnit.swift in Sources */,

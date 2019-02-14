@@ -24,7 +24,7 @@ extension Solution212 {
 
             return distance <= word.count && distance % 2 == (word.count - 1) % 2
         }
-        
+
         func neighbors(_ boardSize: Size) -> [BoardIndex] {
             var array = [BoardIndex]()
             if self.row > 0 {
