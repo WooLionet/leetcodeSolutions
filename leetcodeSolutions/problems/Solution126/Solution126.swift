@@ -10,14 +10,14 @@ import Foundation
 
 class Solution126 {
 
-    var adjacentList: [String: [String]] = [:]
+    private var adjacentList: [String: [String]] = [:]
 
-    func addEdge(_ leftNode: String, _ rightNode: String) {
+    private func addEdge(_ leftNode: String, _ rightNode: String) {
         adjacentList[leftNode, default: []].append(rightNode)
         adjacentList[rightNode, default: []].append(leftNode)
     }
 
-    func buildGraph(_ wordList: Set<String>) {
+    private func buildGraph(_ wordList: Set<String>) {
         adjacentList = [:]
         var nodesMap: [String: [String]] = [:]
         for word in wordList {
@@ -33,7 +33,7 @@ class Solution126 {
         }
     }
 
-    func biderectionalBrethFirstSearch(_ beginWord: String, _ target: String) -> [[String]] {
+    private func biderectionalBrethFirstSearch(_ beginWord: String, _ target: String) -> [[String]] {
 
         var leftVisited: Set<String> = [beginWord]
         var leftPathsToSearch = [[beginWord]]
@@ -46,7 +46,7 @@ class Solution126 {
         var rightNewNodes = Set<String>()
 
         var intersection = Set<String>()
-        while !leftPathsToSearch.isEmpty {
+        while !leftPathsToSearch.isEmpty || !rightPathsToSearch.isEmpty {
             for path in leftPathsToSearch {
                 guard let node = path.last else {continue}
                 for nextNode in adjacentList[node, default: []] where !leftVisited.contains(nextNode) {
