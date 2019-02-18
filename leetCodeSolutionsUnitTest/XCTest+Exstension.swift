@@ -52,3 +52,35 @@ extension XCTest {
         return [K: T]()
     }
 }
+
+protocol CodableEnum: RawRepresentable, Codable, CaseIterable {}
+
+extension CodableEnum where RawValue == String {
+
+    static func dataCorrupted() -> DecodingError {
+        return DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "cant get case name from container"))
+    }
+
+    static func valueNotFound(_ value: String) -> DecodingError {
+        return DecodingError.valueNotFound(self,
+                                           .init(codingPath: [],
+                                                 debugDescription: "can't decode string to enum value: \(value)"))
+    }
+
+    init(from decoder: Decoder) throws {
+        guard let string = try decoder.singleValueContainer().decode([String].self).first else {
+            throw Self.dataCorrupted()
+        }
+
+        for value in Self.allCases where value.rawValue == string {
+            self = value
+            return
+        }
+        throw Self.valueNotFound(string)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.unkeyedContainer()
+        try container.encode(self.rawValue)
+    }
+}

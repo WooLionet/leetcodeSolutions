@@ -39,7 +39,10 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "Solution126Test/testAllExamples()">
+                  Identifier = "Solution126Test">
+               </Test>
+               <Test
+                  Identifier = "Solution212Test">
                </Test>
             </SkippedTests>
          </TestableReference>
