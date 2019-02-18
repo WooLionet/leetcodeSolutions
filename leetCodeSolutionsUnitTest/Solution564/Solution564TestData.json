@@ -1,0 +1,32 @@
+{
+    "zero" : {
+        "number" : "0",
+        "expectedResult" : "1",
+        "description" : "0 -> 1"
+    },
+    "one" : {
+        "number" : "1",
+        "expectedResult" : "0",
+        "description" : "1 -> 0"
+    },
+    "nine" : {
+        "number" : "9",
+        "expectedResult" : "8",
+        "description" : "9 -> 8"
+    },
+    "ten" : {
+        "number" : "10",
+        "expectedResult" : "9",
+        "description" : "10 -> 9"
+    },
+    "oneThousand" : {
+        "number" : "1000",
+        "expectedResult" : "999",
+        "description" : "1000 -> 999"
+    },
+    "bigNumber" : {
+        "number" : "835868090839964076",
+        "expectedResult" : "835868091190868538",
+        "description" : "835868090839964076 -> 835868091190868538"
+    }
+}

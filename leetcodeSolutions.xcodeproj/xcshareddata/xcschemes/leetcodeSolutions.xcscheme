@@ -42,7 +42,13 @@
                   Identifier = "Solution126Test">
                </Test>
                <Test
+                  Identifier = "Solution149Test">
+               </Test>
+               <Test
                   Identifier = "Solution212Test">
+               </Test>
+               <Test
+                  Identifier = "Solution564Test">
                </Test>
             </SkippedTests>
          </TestableReference>
