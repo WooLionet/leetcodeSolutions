@@ -14,7 +14,7 @@ class Solution862 {
         for index in 0..<array.count {
             sums[index + 1] = sums[index] + array[index]
         }
-        var ans = array.count + 1;
+        var ans = array.count + 1
         var possibleStart: [Int] = []
         for index in 0...array.count {
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A04C4DA2224137200CCBF6D /* Solution68.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C4D92224137200CCBF6D /* Solution68.swift */; };
+		3A04C4DF22241D8900CCBF6D /* Solution992.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C4DE22241D8900CCBF6D /* Solution992.swift */; };
 		3A0C670C2216ADC5003A248F /* Solution149.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C670B2216ADC5003A248F /* Solution149.swift */; };
 		3A4821F9221AA31300C4C050 /* Solution149TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4821F6221AA31300C4C050 /* Solution149TestData.json */; };
 		3A4821FA221AA31300C4C050 /* Solution149Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4821F7221AA31300C4C050 /* Solution149Test.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A04C4D92224137200CCBF6D /* Solution68.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution68.swift; sourceTree = "<group>"; };
+		3A04C4DE22241D8900CCBF6D /* Solution992.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution992.swift; sourceTree = "<group>"; };
 		3A0C670B2216ADC5003A248F /* Solution149.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution149.swift; sourceTree = "<group>"; };
 		3A4821F6221AA31300C4C050 /* Solution149TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Solution149TestData.json; sourceTree = "<group>"; };
 		3A4821F7221AA31300C4C050 /* Solution149Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution149Test.swift; sourceTree = "<group>"; };
@@ -92,6 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A04C4D82224137200CCBF6D /* Solution68 */ = {
+			isa = PBXGroup;
+			children = (
+				3A04C4D92224137200CCBF6D /* Solution68.swift */,
+			);
+			path = Solution68;
+			sourceTree = "<group>";
+		};
+		3A04C4DD22241D8900CCBF6D /* Solution992 */ = {
+			isa = PBXGroup;
+			children = (
+				3A04C4DE22241D8900CCBF6D /* Solution992.swift */,
+			);
+			path = Solution992;
+			sourceTree = "<group>";
+		};
 		3A0C670A2216ADC5003A248F /* Solution149 */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +227,8 @@
 		3AFD1A092212C29200CAFAEC /* problems */ = {
 			isa = PBXGroup;
 			children = (
+				3A04C4DD22241D8900CCBF6D /* Solution992 */,
+				3A04C4D82224137200CCBF6D /* Solution68 */,
 				3A9014BE221ECBB600E6A783 /* Solution862 */,
 				3A48220C221AFD3800C4C050 /* Solution420 */,
 				3A4821FF221AADCA00C4C050 /* Solution564 */,
@@ -349,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A48220E221AFD3800C4C050 /* Solution420.swift in Sources */,
+				3A04C4DA2224137200CCBF6D /* Solution68.swift in Sources */,
 				3A9014C0221ECBB600E6A783 /* Solution862.swift in Sources */,
+				3A04C4DF22241D8900CCBF6D /* Solution992.swift in Sources */,
 				3AFD1A0C2212C29200CAFAEC /* Solution212.swift in Sources */,
 				3A9EDF5B22043FA200A8813A /* main.swift in Sources */,
 				3AFD1A152213065100CAFAEC /* Solution126.swift in Sources */,
